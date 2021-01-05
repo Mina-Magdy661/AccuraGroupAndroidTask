@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UI.main.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                app:srcCompat="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/editMobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imgLogo"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_background"
+                android:gravity="center"
+                android:hint="Mobile"
+                android:shadowColor="#FFFFFF"
+                android:textColor="#000000"
+                android:textColorHint="#BDB4B4"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editMobile"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_background"
+                android:gravity="center"
+                android:hint="Password"
+                android:shadowColor="#FFFFFF"
+                android:textColor="#000000"
+                android:textColorHint="#BDB4B4"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/editPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/edit_background"
+                android:shadowColor="#000000"
+                android:text="Login"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
